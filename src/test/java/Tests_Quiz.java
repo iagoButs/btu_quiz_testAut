@@ -38,6 +38,7 @@ public class Tests_Quiz {
         login.click();
         
         //coment form check jenkins
+	//comment
         //check logout button appeared
         sleep(5000);
         //wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.id("userName-value"))));
