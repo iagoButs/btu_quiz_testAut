@@ -36,7 +36,8 @@ public class Tests_Quiz {
         pass.sendKeys(v.pass);
         js.executeScript("arguments[0].scrollIntoView(true);", login);
         login.click();
-
+        
+        //coment form check jenkins
         //check logout button appeared
         sleep(5000);
         //wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.id("userName-value"))));
