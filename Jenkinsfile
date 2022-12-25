@@ -5,13 +5,13 @@ pipeline {
       parallel {
         stage('buid_maven_project') {
           steps {
-            sh 'mvn clean install -Dlicense.skip=true'
+            sh 'call mvn clean install'
           }
         }
 
         stage('mvn-version') {
           steps {
-            sh 'mvn -v'
+            sh 'call mvn -v'
           }
         }
 
