@@ -1,15 +1,15 @@
 pipeline {
   agent any
   stages {
-    stage('buid_maven_project') {
+    stage('buld mvn_proj') {
       parallel {
-        stage('buid_maven_project') {
+        stage('buld mvn_proj') {
           steps {
             sh 'call mvn clean install'
           }
         }
 
-        stage('mvn-version') {
+        stage('mvn version') {
           steps {
             sh 'call mvn -v'
           }
